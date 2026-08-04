@@ -2,7 +2,7 @@
 const button = document.getElementById("openBtn");
 
 button.addEventListener("click", () => {
-
+document.getElementById("bgMusic").play();
 document.body.innerHTML = `
 
 <div style="display:flex;
