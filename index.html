@@ -14,7 +14,7 @@ font-family:Arial,sans-serif;
 }
 
 body{
-background:linear-gradient(135deg,#000,#2d0036,#000);
+background:linear-gradient(135deg,#000000,#2b0038,#000000);
 overflow:hidden;
 height:100vh;
 display:flex;
@@ -25,6 +25,7 @@ color:white;
 
 .container{
 text-align:center;
+padding:20px;
 z-index:2;
 }
 
@@ -34,32 +35,36 @@ color:#ff4da6;
 text-shadow:0 0 20px hotpink;
 }
 
+h2{
+margin-top:15px;
+}
+
 p{
 margin-top:20px;
 font-size:22px;
 }
 
 button{
-margin-top:40px;
+margin-top:35px;
 padding:18px 40px;
+font-size:20px;
+background:#ff4da6;
 border:none;
 border-radius:50px;
-background:#ff4da6;
 color:white;
-font-size:20px;
 cursor:pointer;
 }
 
 .heart{
 position:absolute;
+font-size:24px;
 color:#ff5ca8;
-font-size:20px;
-animation:float 8s linear infinite;
+animation:float 10s linear infinite;
 }
 
 @keyframes float{
 0%{
-transform:translateY(100vh);
+transform:translateY(110vh);
 opacity:0;
 }
 100%{
@@ -89,7 +94,7 @@ Open My Heart ❤️
 
 <script>
 
-for(let i=0;i<40;i++){
+for(let i=0;i<50;i++){
 
 let h=document.createElement("div");
 
@@ -99,7 +104,7 @@ h.innerHTML="❤️";
 
 h.style.left=Math.random()*100+"vw";
 
-h.style.animationDuration=(5+Math.random()*5)+"s";
+h.style.animationDuration=(6+Math.random()*6)+"s";
 
 document.body.appendChild(h);
 
@@ -109,40 +114,32 @@ function openWish(){
 
 document.body.innerHTML=`
 
-<div style="height:100vh;background:black;color:white;display:flex;justify-content:center;align-items:center;flex-direction:column;text-align:center;padding:20px;">
+<div style="display:flex;justify-content:center;align-items:center;flex-direction:column;height:100vh;background:black;color:white;text-align:center;padding:20px;">
 
-<img src="hafsa.jpg" style="width:220px;height:220px;border-radius:50%;border:5px solid hotpink;box-shadow:0 0 30px hotpink;object-fit:cover;">
+<img src="hafsa.jpg"
+style="width:220px;height:220px;border-radius:50%;border:6px solid hotpink;box-shadow:0 0 35px hotpink;object-fit:cover;">
 
-<h1 style="color:#ff4da6;font-size:60px;margin-top:20px;">
-Happy Birthday ❤️
-</h1>
+<h1 style="margin-top:25px;color:#ff4da6;">Happy Birthday ❤️</h1>
 
 <h2>HAFSA (BICHCHU)</h2>
 
-<p style="font-size:22px;line-height:35px;margin-top:20px;">
-Wish You Many Many Happy Returns Of The Day ❤️
+<p style="font-size:22px;line-height:35px;max-width:700px;margin-top:20px;">
+
+Wish You Many Many Happy Returns Of The Day Bichchu ❤️
+
 <br><br>
+
+Allah tumhe hamesha khush rakhe, har dua qubool kare aur tumhari zindagi khushiyon se bhar de. 🤲
+
+<br><br>
+
+🌹 "Har dua mein tera naam aata hai,
+Har muskurahat mein tera chehra nazar aata hai.
 Allah tumhe hamesha khush rakhe,
-har dua qubool kare,
-aur tumhari zindagi khushiyon se bhar de. 🤲
-<br><br>
-Take Care ❤️
-</p>
-<br><br>
+Bas yahi dil se har roz dua nikalti hai." 🌹
 
-🎂🎉🎂
-
-<h2 style="color:hotpink;">
-May Allah bless you always ❤️
-</h2>
-
-<p style="font-size:20px;">
-Stay happy, keep smiling, and always shine like a star ✨
 </p>
 
-<div style="font-size:70px;margin-top:20px;">
-🎂
-</div>
 </div>
 
 `;
